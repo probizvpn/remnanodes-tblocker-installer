@@ -155,6 +155,7 @@ configure_node() {
     
     print_info "Создаем папку для логов..."
     mkdir -p /var/log/remnanode
+    chmod -R 755 /var/log/remnanode
     print_success "Папка для логов создана"
     
     print_info "Устанавливаем logrotate..."
